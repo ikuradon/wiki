@@ -22,6 +22,7 @@
                   option(value='google') Google ID
                   option(value='facebook') Facebook
                   option(value='github') GitHub
+                  option(value='gitlab') GitLab
                   option(value='slack') Slack
             section(v-if='provider=="local"')
               label.label {{ $t('modal.createuserpassword') }}

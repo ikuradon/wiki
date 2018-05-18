@@ -29,6 +29,8 @@ defaults:
         enabled: false
       github:
         enabled: false
+      gitlab:
+        enabled: false
       slack:
         enabled: false
       ldap:

@@ -64,6 +64,10 @@ html(data-logic='login')
             button.github(onclick='window.location.assign("/login/github")')
               i.icon-github
               span= t('auth:providers.github')
+          if appconfig.auth.gitlab && appconfig.auth.gitlab.enabled
+            button.gitlab(onclick='window.location.assign("/login/gitlab")')
+              i.icon-gitlab
+              span= t('auth:providers.gitlab')
           if appconfig.auth.slack && appconfig.auth.slack.enabled
             button.slack(onclick='window.location.assign("/login/slack")')
               i.icon-slack

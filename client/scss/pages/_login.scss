@@ -230,6 +230,19 @@ a {
 				}
 			}
 
+			&.gitlab {
+				background-color: mc('blue-grey','700');
+				border-color: lighten(mc('blue-grey','700'), 10%);
+
+				&:focus {
+					border-color: #FFF;
+				}
+
+				&:hover {
+					background-color: darken(mc('blue-grey','700'), 10%);
+				}
+			}
+
       &.slack {
 				background-color: mc('purple','700');
 				border-color: lighten(mc('purple','700'), 10%);

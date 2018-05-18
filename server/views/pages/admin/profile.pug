@@ -28,7 +28,7 @@ block adminContent
               p.control.is-fullwidth
                 input.input(type='text', placeholder=t('admin:profile.displaynameexample'), v-model='name')
             //-section
-              label.label #{t('admin:profile.tfa')}: #[strong.is-red(v-cloak) {{ tfaStatus }}] 
+              label.label #{t('admin:profile.tfa')}: #[strong.is-red(v-cloak) {{ tfaStatus }}]
               button.button.is-blue(@click='$store.dispatch("modalProfile2fa/open")', :disabled='tfaIsActive')
                 i.nc-icon-outline.ui-1_circle-add
                 span= t('admin:profile.tfaenable')
@@ -50,6 +50,7 @@ block adminContent
               when 'google': i.icon-google.is-blue
               when 'facebook': i.icon-facebook.is-indigo
               when 'github': i.icon-github.is-grey
+              when 'gitlab': i.icon-gitlab.is-red
               when 'slack': i.icon-slack.is-purple
               when 'ldap': i.icon-arrow-repeat-outline
               default: i.icon-warning

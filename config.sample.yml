@@ -78,6 +78,11 @@ auth:
     enabled: false
     clientId: GITHUB_CLIENT_ID
     clientSecret: GITHUB_CLIENT_SECRET
+  gitlab:
+    enabled: true
+    baseUrl: GITLAB_BASE_URL
+    clientId: GITLAB_CLIENT_ID
+    clientSecret: GITLAB_CLIENT_SECRET
   slack:
     enabled: false
     clientId: 'SLACK_CLIENT_ID'

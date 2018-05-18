@@ -100,6 +100,7 @@
     "passport-azure-ad-oauth2": "0.0.4",
     "passport-facebook": "~2.1.1",
     "passport-github2": "~0.1.10",
+    "passport-gitlab2": "~3.0.0",
     "passport-google-oauth20": "~1.0.0",
     "passport-ldapauth": "~2.0.0",
     "passport-local": "~1.0.0",

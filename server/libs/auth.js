@@ -128,7 +128,28 @@ module.exports = function (passport) {
       ))
   }
 
-  // Slack
+  // Gitlab
+
+  if (appconfig.auth.gitlab && appconfig.auth.gitlab.enabled) {
+    const GitlabStrategy = require('passport-gitlab2').Strategy
+    passport.use('gitlab',
+      new GitlabStrategy({
+        clientID: appconfig.auth.gitlab.clientId,
+        clientSecret: appconfig.auth.gitlab.clientSecret,
+        callbackURL: appconfig.host + '/login/gitlab/callback',
+        baseURL: appconfig.auth.gitlab.baseUrl,
+        scope: ['read_user']
+      }, (accessToken, refreshToken, profile, cb) => {
+        db.User.processProfile(profile).then((user) => {
+          return cb(null, user) || true
+        }).catch((err) => {
+          return cb(err, null) || true
+        })
+      }
+      ))
+  }
+
+    // Slack
 
   if (appconfig.auth.slack && appconfig.auth.slack.enabled) {
     const SlackStrategy = require('passport-slack').Strategy
