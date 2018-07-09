@@ -12,7 +12,8 @@
 [![Codacy Badge](https://img.shields.io/codacy/grade/1d0217a3153c4595bdedb322263e55c8/master.svg?style=flat)](https://www.codacy.com/app/Requarks/wiki)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 [![Chat on Gitter](https://img.shields.io/badge/chat-on_gitter-CC2B5E.svg?style=flat&logo=image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAOCAMAAADUg/YpAAAABlBMVEUAAAD///%2Bl2Z/dAAAAAXRSTlMAQObYZgAAABVJREFUeAFjwAUYYTQByAAh0WicAAAFnwAYeB5bLwAAAABJRU5ErkJggg==)](https://gitter.im/Requarks/wiki)
-[![Twitter Follow](https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat)](https://twitter.com/requarks)
+[![Twitter Follow](https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat)](https://twitter.com/requarks)  
+[![Planning Board](https://badge.waffle.io/Requarks/wiki.svg?columns=all)](https://waffle.io/Requarks/wiki)
 
 ##### A modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown
 
@@ -42,19 +43,17 @@ Wiki.js can run on virtually all platforms where Node.js can (Windows, Mac, Linu
 
 > Read the full [prerequisites](https://docs.requarks.io/wiki/install/prerequisites) article for full details.
 
-<h2 align="center">Docker</h2>
+<h2 align="center">Docker / Cloud Install</h2>
 
-A docker Wiki.js image is available on Docker Hub:
+A docker image is available on Docker Hub.  
+You can also use a Dockerfile ([see example](https://github.com/Requarks/wiki/blob/master/tools/Dockerfile)) or Docker Compose ([see example](https://github.com/Requarks/wiki/blob/master/tools/docker-compose.yml)) to run Wiki.js.  
+<a href="https://hub.docker.com/r/requarks/wiki/" title="Docker Image"><img src="https://wiki.js.org/assets/svg/deploy-docker.svg" alt="Docker Image" height="36" /></a>
 
-[![Docker Image](https://raw.githubusercontent.com/Requarks/wiki-site/master/assets/images/docker-deploy.png)](https://hub.docker.com/r/requarks/wiki/)
+Deploy to Heroku using this pre-built deployment template:  
+<a href="https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku" title="Deploy to Heroku"><img src="https://wiki.js.org/assets/svg/deploy-heroku.svg" alt="Deploy to Heroku" height="36" /></a>
 
-You can also use a Dockerfile ([see example](https://github.com/Requarks/wiki/blob/master/tools/Dockerfile)) or Docker Compose ([see example](https://github.com/Requarks/wiki/blob/master/tools/docker-compose.yml)) to run Wiki.js.
-
-<h2 align="center">Cloud Install</h2>
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/requarks/wiki-heroku)
-
-*Docker Cloud, Azure, IBM Bluemix and more coming soon!*
+Deploy to IBM Cloud Foundry using this pre-built deployment template *(thanks to [@seafre](https://github.com/seafre))*:  
+<a href="https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/Requarks/wiki-ibm-cloud-foundry" title="Deploy to IBM Cloud"><img src="https://wiki.js.org/assets/svg/deploy-ibm-cloud.svg" alt="Deploy to IBM Cloud" height="36" /></a>
 
 <h2 align="center">Demo</h2>
 
@@ -65,6 +64,8 @@ The legacy Wiki.js documentation site is actually running Wiki.js! [Check it out
 <h2 align="center">Milestones</h2>
 
 Current and upcoming milestones *(major features only, see the [changelog](https://docs.requarks.io/wiki/developers/changelog) for complete list of features and bug fixes)*:
+
+:bookmark_tabs: See [project board](https://waffle.io/Requarks/wiki) to keep track of current progress.
 
 ### 1.0.78 - Stable
 ![Progress](http://progressed.io/bar/100)
