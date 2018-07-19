@@ -28,6 +28,8 @@
 - [Feature Requests](https://requests.requarks.io/wiki)
 - [Milestones](#milestones)
 - [Chat with us](#gitter)
+- [Donate](https://opencollective.com/wikijs)
+- [T-Shirts Shop](#t-shirts-shop)
 - [Translations](#translations) *(We need your help!)*
 - [Special Thanks](#special-thanks)
 - [Contribute](#contributors)
@@ -174,6 +176,10 @@ Want to discuss features, ideas or issues? Join our [gitter channel](https://git
 
 Follow our Twitter feed to learn about upcoming updates and new releases!  
 [![Twitter Follow](https://img.shields.io/badge/follow-%40requarks-blue.svg?style=flat-square)](https://twitter.com/requarks)  
+
+<h2 align="center">T-Shirts Shop</h2>
+
+Want to donate to this project but get something in return as well? Check out our amazing t-shirts for men, women and kids, as well as other goodies: [Wiki.js Shop](https://wikijs.threadless.com/)
 
 <h2 align="center">Translations</h2>
 
