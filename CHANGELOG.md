@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [v1.0.102] - 2018-08-02
+### Added
+- **Authentication**: Open ID Connection provider (thanks to @sazulo)
+- **Localization**: Turkish locale is now available (thanks to @MrSimsek)
+
+### Fixed
+- **Misc**: Paths in git commits are no longer escaped (thanks to @EricFromCanada)
+- **Uploads**: Fixed potential bug when uploading certain images (thanks to @Gnurdle)
+
 ## [v1.0.78] - 2018-02-23
 ### Fixed
 - **Authentication**: Azure AD email getter
@@ -269,6 +278,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Updated dependencies + snyk policy
 
+[v1.0.102]: https://github.com/Requarks/wiki/releases/tag/v1.0.102
 [v1.0.78]: https://github.com/Requarks/wiki/releases/tag/v1.0.78
 [v1.0.76]: https://github.com/Requarks/wiki/releases/tag/v1.0.76
 [v1.0.68]: https://github.com/Requarks/wiki/releases/tag/v1.0.68

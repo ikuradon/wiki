@@ -99,6 +99,7 @@ router.get('/login/gitlab', passport.authenticate('gitlab', { scope: ['read_user
 router.get('/login/slack', passport.authenticate('slack', { scope: ['identity.basic', 'identity.email'] }))
 router.get('/login/azure', passport.authenticate('azure_ad_oauth2'))
 router.get('/login/oauth2', passport.authenticate('oauth2'))
+router.get('/login/oidc', passport.authenticate('oidc'))
 
 router.get('/login/ms/callback', passport.authenticate('windowslive', { failureRedirect: '/login', successRedirect: '/' }))
 router.get('/login/google/callback', passport.authenticate('google', { failureRedirect: '/login', successRedirect: '/' }))
@@ -108,6 +109,7 @@ router.get('/login/gitlab/callback', passport.authenticate('gitlab', { failureRe
 router.get('/login/slack/callback', passport.authenticate('slack', { failureRedirect: '/login', successRedirect: '/' }))
 router.get('/login/azure/callback', passport.authenticate('azure_ad_oauth2', { failureRedirect: '/login', successRedirect: '/' }))
 router.get('/login/oauth2/callback', passport.authenticate('oauth2', { failureRedirect: '/login', successRedirect: '/' }))
+router.get('/login/oidc/callback', passport.authenticate('oidc', { failureRedirect: '/login', successRedirect: '/' }))
 
 /**
  * Logout
